@@ -33,22 +33,3 @@ struct ContentView: View {
 }
 
 
-
-struct CategoryPill: View {
-    let title: String
-    
-    var body: some View {
-        Text(title)
-            .font(.headline)
-            .padding([.leading, .trailing])
-            .padding([.top, .bottom], 4)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(.secondary, lineWidth: 2)
-            )
-    }
-}
-
-#Preview(traits: .sizeThatFitsLayout) {
-    CategoryPill(title: "Beef")
-}
