@@ -14,9 +14,11 @@ struct CategoryPill: View {
         Text(title)
             .font(.headline)
             .padding([.leading, .trailing])
-            .padding([.top, .bottom], 4)
+            .padding([.top, .bottom], 10)
+            .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
+                    .inset(by: 2)
                     .stroke(.secondary, lineWidth: 2)
             )
     }
