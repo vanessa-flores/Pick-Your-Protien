@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A3A33FF82D5E8A9C0065428E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A3A33FF72D5E8A9C0065428E /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A37F71052D5E43C3005D3ECF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A33FF82D5E8A9C0065428E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Pick Your Protien";
 			packageProductDependencies = (
+				A3A33FF72D5E8A9C0065428E /* ComposableArchitecture */,
 			);
 			productName = "Pick Your Protien";
 			productReference = A37F70F42D5E43C2005D3ECF /* Pick Your Protien.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = A37F70EB2D5E43C2005D3ECF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A3A33FF62D5E8A9C0065428E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A37F70F52D5E43C2005D3ECF /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3A33FF62D5E8A9C0065428E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3A33FF72D5E8A9C0065428E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3A33FF62D5E8A9C0065428E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A37F70EC2D5E43C2005D3ECF /* Project object */;
 }
